@@ -1,0 +1,23 @@
+
+{
+  "manifest_version": 3,
+  "name": "評価ノート",
+  "version": "1.0",
+  "description": "記事に星評価を追加します。",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128":"icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "exclude_matches":["https://www.google.com/search*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

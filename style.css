@@ -1,0 +1,11 @@
+
+#star-rating-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#star-rating-container span:hover {
+  color: orange;
+}
